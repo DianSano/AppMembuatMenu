@@ -24,6 +24,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        /*if (item.getItemId() == R.id.item1) {
+            Toast.makeText(this, "Ini item 1", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (item.getItemId() == R.id.item2) {
+            Toast.makeText(this, "Ini item 2", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (item.getItemId() == R.id.subitem31) {
+            Toast.makeText(this, "Ini sub item 3.1", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (item.getItemId() == R.id.subitem32) {
+            Toast.makeText(this, "Ini sub item 3.2", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }*/
         switch (item.getItemId()) {
             case R.id.item1:
                 Toast.makeText(this, "Ini item 1", Toast.LENGTH_SHORT).show();
@@ -38,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Ini sub item 3.2", Toast.LENGTH_SHORT).show();
                 return true;
 
-                default:return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
     }
+
 }
